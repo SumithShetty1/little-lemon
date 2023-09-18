@@ -1,38 +1,242 @@
-.App {
-  text-align: center;
+/* Styling */
+* {
+    font-family: "Markazi Text", "Karla";
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+    background-color: white;
+    align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+nav ul li {
+    display: inline-block;
+    margin-left: 39px;
 }
 
-.App-link {
-  color: #61dafb;
+nav a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.32em;
+    font-family: "Karla";
+    padding: 5px;
+    border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav > ul a:hover {
+    color: #EDEFEE;
+    background-color: #495E57;
+}
+
+nav > ul a:focus {
+    color: #EDEFEE;
+    background-color: #495E57;
+}
+
+main {
+    background-color: #495E57;
+}
+
+.hero h1 {
+    margin: 0;
+    color: #F4CE14;
+    font-size: 3.4em;
+    font-family: "Markazi Text";
+}
+
+.hero h2 {
+    margin-top: 0;
+    color: #EDEFEE;
+    font-size: 2.1em;
+    font-family: "Markazi Text";
+}
+
+.hero p {
+    width: 272px;
+    margin-bottom: 8px;
+    color: #EDEFEE;
+    font-size: 1.45em;
+    font-family: "Karla";
+}
+
+.hero button {
+    width: 195px;
+    height: 50px;
+    font-size: 1.4em;
+    font-family: "Karla";
+    background-color: #F4CE14;
+    border: none;
+    border-radius: 18px;
+    cursor: pointer;
+}
+
+.hero img {
+    margin-top: 24px;
+    border-radius: 16px;
+}
+
+.specialsheader h1 {
+    font-size: 2.55em;
+    font-family: "Markazi Text";
+}
+
+.specialsheader button {
+    width: 216px;
+    height: 53px;
+    font-size: 1.4em;
+    font-family: "Karla";
+    background-color: #F4CE14;
+    border: none;
+    border-radius: 18px;
+    cursor: pointer;
+}
+
+.specials article {
+    padding-bottom: 38px;
+    font-family: "Karla";
+    border-radius: 16px 16px 0 0;
+    background-color: #EDEFEE;
+}
+
+.specials article > img {
+    width: 100%;
+    border-radius: 16px 16px 0 0;
+}
+
+.title, .description, .order {
+    margin: 0 18px;
+    font-size: 1.27em;
+}
+
+.highlights h3 {
+    font-family: "Markazi Text";
+}
+
+.title {
+    margin-bottom: 10px;
+}
+
+.price {
+    color: orange;
+    font-size: 1em;
+}
+
+.description, .order {
+    margin-right: 36px;
+    margin-bottom: 60px;
+}
+
+.description {
+    color: #333333;
+}
+
+.order {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.testimonials {
+    background-color: #495E57;
+}
+
+.tcontainer h1 {
+    color: #F4CE14;
+    font-size: 2.84em;
+    font-family: "Markazi Text";
+}
+
+.tcontainer article {
+    background-color: #EDEFEE;
+}
+
+.tcontainer img:nth-of-type(2) {
+    border-radius: 50%;
+}
+
+.tcontainer article > h3, .review {
+    font-size: 1.2em;
+    font-family: "Karla";
+}
+
+.review {
+    color: #333333;
+}
+
+.about h1 {
+    margin: 0;
+    color: #F4CE14;
+    font-size: 3.4em;
+    font-family: "Markazi Text";
+}
+
+.about h2 {
+    margin-top: 0;
+    color: #495E57;
+    font-size: 2.1em;
+    font-family: "Markazi Text";
+}
+
+.about p {
+    margin-bottom: 7px;
+    color: #333333;
+    font-size: 1.45em;
+    font-family: "Karla";
+}
+
+footer {
+    font-size: 1.2em;
+    border-top: 5px solid black;
+}
+
+.fcontainer a {
+    color: black;
+    text-decoration: none;
+}
+
+.fcontainer li {
+    padding: 1px;
+    font-family: "Karla";
+}
+
+.fcontainer h3 {
+    font-family: "Markazi Text";
+}
+
+.navigation a:hover {
+    background-color: #EDEFEE;
+}
+
+.navigation a:active {
+    background-color: #EDEFEE;
+}
+
+.social ul li a {
+    display: flex;
+    align-items: center;
+}
+
+.social img {
+    padding-bottom: 5px;
+    padding-right: 5px;
+}
+
+/* Reservations */
+form {
+    display: grid;
+    max-width: 200px;
+    gap: 20px;
+}
+
+form h1 {
+    margin: 0;
+    color: #F4CE14;
+    font-size: 3.4em;
+    font-family: "Markazi Text";
 }
