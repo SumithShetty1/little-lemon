@@ -1,3 +1,4 @@
+import React from 'react';
 import owners1 from "../assets/images/Mario and Adrian A.jpg"
 import owners2 from "../assets/images/Mario and Adrian b.jpg"
 

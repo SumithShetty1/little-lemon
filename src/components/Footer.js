@@ -1,3 +1,4 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
 import flogo from '../assets/images/footerlogo.png';
 import facebook from "../assets/images/facebook.png"
@@ -15,10 +16,10 @@ export default function Footer(){
                     <ul>
                       <li><Link to="/">Home</Link></li>
                       <li><a href="#about">About</a></li>
-                      <li><a href="#">Menu</a></li>
+                      <li><a href="#menu">Menu</a></li>
                       <li><Link to="/reservations">Reservations</Link></li>
-                      <li><a href="#">Order Online</a></li>
-                      <li><a href="#">Login</a></li>
+                      <li><a href="#order">Order Online</a></li>
+                      <li><a href="#login">Login</a></li>
                     </ul>
                 </section>
                 <section className='contact'>

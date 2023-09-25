@@ -1,3 +1,4 @@
+import React from 'react';
 import ratingstar from "../assets/images/ratingstar.png"
 import profile1 from "../assets/images/Selena G..jpg"
 import profile2 from "../assets/images/Brandon M..jpg"

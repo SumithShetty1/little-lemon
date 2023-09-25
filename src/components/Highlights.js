@@ -1,3 +1,4 @@
+import React from 'react';
 // Import the necessary image assets
 import greeksalad from "../assets/images/greek salad.jpg"
 import bruchetta from "../assets/images/bruchetta.svg"

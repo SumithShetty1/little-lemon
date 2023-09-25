@@ -226,17 +226,3 @@ footer {
     padding-bottom: 5px;
     padding-right: 5px;
 }
-
-/* Reservations */
-form {
-    display: grid;
-    max-width: 200px;
-    gap: 20px;
-}
-
-form h1 {
-    margin: 0;
-    color: #F4CE14;
-    font-size: 3.4em;
-    font-family: "Markazi Text";
-}
