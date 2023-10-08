@@ -262,6 +262,7 @@
     right: 198px;
 }
 
+/* Media queries for Desktop */
 @media (min-width: 1024px) and (max-width: 1560px) {
     /* Highlights */
     .highlights {
@@ -286,6 +287,131 @@
 
     .about p {
         font-size: 1.2em;
+    }
+}
+
+/* Media queries for Tablet */
+@media (max-width: 1023px) and (min-width: 768px) {
+    /* Hero */
+    .hero > article {
+        gap: 10px;
+    }
+
+
+    .hero img {
+        height: 380px;
+        margin-top: 60px;
+    }
+
+    /* Highlights */
+    .highlights {
+        grid-column: 1 / span 8;
+        padding: 0 40px;
+        column-gap: 15px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+
+    .specialsheader {
+        margin-bottom: 15px;
+    }
+
+    .specials {
+        display: block;
+    }
+
+    .specials article {
+        padding-bottom: 20px;
+        border-radius: 16px;
+        margin-bottom: 20px;
+    }
+
+    .specials article > img {
+        display: inline-block;
+        width: 40%;
+        height: 50%;
+        border-radius: 16px 0 0 0;
+    }
+
+    .specials br {
+        display: none;
+    }
+
+    .title {
+        display: inline-block;
+        margin-left: 100px;
+        margin-bottom: 20px;
+        vertical-align: top;
+    }
+
+    .price {
+        padding: 0;
+    }
+
+    .description, .order {
+        margin-right: 18px;
+        margin-bottom: 15px;
+    }
+
+    /* Testimonials */
+    .testimonials {
+        grid-column: 1 / span 8;
+        padding: 0 100px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .tcontainer {
+        display: block;
+    }
+
+    .tcontainer h1 {
+        font-size: 2em;
+    }
+
+    .tcontainer article {
+        margin-bottom: 30px;
+        border-radius: 16px;
+    }
+
+    .tcontainer > div {
+        display: block;
+    }
+
+    .tcontainer div > article > img, .review {
+        margin-top: 20px;
+    }
+
+    .tcontainer article > h3, .review {
+        font-size: 1.2em;
+    }
+
+    .review {
+        padding-bottom: 20px;
+    }
+
+    /* About */
+    .about {
+        grid-column: 1 / span 8;
+        padding: 0 40px;
+    }
+
+    .about article {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .owners1 {
+        position: static;
+        width: 50%;
+        height: 50%;
+    }
+
+    .owners2 {
+        position:static;
+        width: 50%;
+        height: 50%;
     }
 }
 
@@ -462,12 +588,14 @@
     }
 
     .owners1 {
-        position: relative;
-        width: 100%;
+        position: static;
+        width: 50%;
         height: 50%;
     }
 
     .owners2 {
-        display: none;
+        position: static;
+        width: 50%;
+        height: 50%;
     }
 }
