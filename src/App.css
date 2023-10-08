@@ -3,201 +3,117 @@
     font-family: "Markazi Text", "Karla";
 }
 
+/* Common Grid Styles */
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto auto auto auto auto; /* Define row heights */
+    column-gap: 20px;
+    max-width: 100%;
+}
+
+/* Header */
 header {
+    grid-column: 1 / span 12;
+    height: 70px;
+    max-width: 100%;
+    line-height: 40px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
     background-color: white;
-    align-items: center;
 }
 
-ul {
-    list-style: none;
-    margin-left: 0;
-    padding-left: 0;
+.logo {
+    margin: 10px 0px 0px 247px;
 }
 
-nav ul li {
+/* Nav */
+nav {
+    float: right;
+    margin-right: 247px;
+}
+
+nav li {
     display: inline-block;
-    margin-left: 39px;
+    margin-left: 40px;
 }
 
 nav a {
     color: black;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.32em;
+    font-size: 1.5em;
     font-family: "Karla";
     padding: 5px;
     border-radius: 5px;
 }
 
-nav > ul a:hover {
+nav a:hover {
     color: #EDEFEE;
     background-color: #495E57;
 }
 
-nav > ul a:focus {
+nav a:focus {
     color: #EDEFEE;
     background-color: #495E57;
 }
 
+.checkbtn {
+    color: white;
+    float: right;
+    line-height: 60px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+/* Main */
 main {
+    grid-column: 1 / span 12;
+    grid-row: 2;
+    height: 360px;
+    padding: 100px 247px 0 247px;
+    margin-bottom: 140px;
     background-color: #495E57;
 }
 
-.hero h1 {
-    margin: 0;
-    color: #F4CE14;
-    font-size: 3.4em;
-    font-family: "Markazi Text";
-}
-
-.hero h2 {
-    margin-top: 0;
-    color: #EDEFEE;
-    font-size: 2.1em;
-    font-family: "Markazi Text";
-}
-
-.hero p {
-    width: 272px;
-    margin-bottom: 8px;
-    color: #EDEFEE;
-    font-size: 1.45em;
-    font-family: "Karla";
-}
-
-.hero button {
-    width: 195px;
-    height: 50px;
-    font-size: 1.4em;
-    font-family: "Karla";
-    background-color: #F4CE14;
-    border: none;
-    border-radius: 18px;
-    cursor: pointer;
-}
-
-.hero img {
-    margin-top: 24px;
-    border-radius: 16px;
-}
-
-.specialsheader h1 {
-    font-size: 2.55em;
-    font-family: "Markazi Text";
-}
-
-.specialsheader button {
-    width: 216px;
-    height: 53px;
-    font-size: 1.4em;
-    font-family: "Karla";
-    background-color: #F4CE14;
-    border: none;
-    border-radius: 18px;
-    cursor: pointer;
-}
-
-.specials article {
-    padding-bottom: 38px;
-    font-family: "Karla";
-    border-radius: 16px 16px 0 0;
-    background-color: #EDEFEE;
-}
-
-.specials article > img {
-    width: 100%;
-    border-radius: 16px 16px 0 0;
-}
-
-.title, .description, .order {
-    margin: 0 18px;
-    font-size: 1.27em;
-}
-
-.highlights h3 {
-    font-family: "Markazi Text";
-}
-
-.title {
-    margin-bottom: 10px;
-}
-
-.price {
-    color: orange;
-    font-size: 1em;
-}
-
-.description, .order {
-    margin-right: 36px;
-    margin-bottom: 60px;
-}
-
-.description {
-    color: #333333;
-}
-
-.order {
-    color: black;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.testimonials {
-    background-color: #495E57;
-}
-
-.tcontainer h1 {
-    color: #F4CE14;
-    font-size: 2.84em;
-    font-family: "Markazi Text";
-}
-
-.tcontainer article {
-    background-color: #EDEFEE;
-}
-
-.tcontainer img:nth-of-type(2) {
-    border-radius: 50%;
-}
-
-.tcontainer article > h3, .review {
-    font-size: 1.2em;
-    font-family: "Karla";
-}
-
-.review {
-    color: #333333;
-}
-
-.about h1 {
-    margin: 0;
-    color: #F4CE14;
-    font-size: 3.4em;
-    font-family: "Markazi Text";
-}
-
-.about h2 {
-    margin-top: 0;
-    color: #495E57;
-    font-size: 2.1em;
-    font-family: "Markazi Text";
-}
-
-.about p {
-    margin-bottom: 7px;
-    color: #333333;
-    font-size: 1.45em;
-    font-family: "Karla";
-}
-
+/* Footer */
 footer {
+    grid-column: 1 / span 12;
+    grid-row: 6;
+    max-width: 100%;
+    padding: 0 247px;
     font-size: 1.2em;
     border-top: 5px solid black;
+}
+
+.fcontainer {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-template-rows: auto;
+    column-gap: 20px;
+}
+
+.fcontainer > img {
+    grid-column: 1;
+    grid-row: 1;
+    align-self: center;
 }
 
 .fcontainer a {
     color: black;
     text-decoration: none;
+}
+
+.fcontainer ul {
+    list-style: none;
+    padding: 0;
 }
 
 .fcontainer li {
@@ -209,12 +125,27 @@ footer {
     font-family: "Markazi Text";
 }
 
+.navigation {
+    grid-column: 2;
+    grid-row: 1;
+}
+
 .navigation a:hover {
     background-color: #EDEFEE;
 }
 
 .navigation a:active {
     background-color: #EDEFEE;
+}
+
+.contact {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.social {
+    grid-column: 4;
+    grid-row: 1;
 }
 
 .social ul li a {
@@ -225,4 +156,199 @@ footer {
 .social img {
     padding-bottom: 5px;
     padding-right: 5px;
+}
+
+/* Media queries for Desktop */
+@media (min-width: 1024px) {
+    .container {
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: 20px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1560px) {
+    /* Header */
+    .logo {
+        margin: 10px 0px 0px 100px;
+    }
+
+    /* Nav */
+    nav {
+        margin-right: 100px;
+    }
+
+    nav li {
+        margin-left: 20px;
+    }
+
+    nav a {
+        font-size: 1.2em;
+    }
+
+    /* Main */
+    main {
+        padding: 100px 100px 0 100px;
+    }
+
+    /* Footer */
+    footer {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+/* Media queries for Tablet */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .container {
+        grid-template-columns: repeat(8, 1fr);
+        column-gap: 15px;
+    }
+
+    /* Header */
+    header {
+        grid-column: 1 / span 8;
+        height: 50px;
+        line-height: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .logo {
+        width: 120px;
+        margin: 9px 0px;
+    }
+
+     /* Main */
+    main {
+        grid-column: 1 / span 8;
+        height: 380px;
+        padding: 60px 20px 0 20px;
+        margin-bottom: 140px;
+    }
+
+    /* Footer */
+    footer {
+        grid-column: 1 / span 8;
+        padding: 0 20px 0px 40px;
+        font-size: 12px;
+    }
+
+    .fcontainer {
+        display: flex;
+        gap: 50px;
+    }
+
+    .fcontainer > img {
+        width: 50px;
+        height: 90px;
+    }
+
+    .social img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* Media queries for Mobile */
+@media (max-width: 767px) {
+    .container {
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 10px;
+    }
+
+    /* Header */
+    header {
+        grid-column: 1 / span 4;
+        height: 50px;
+        line-height: 30px;
+        padding: 0px;
+    }
+
+    .logo {
+        width: 120px;
+        margin: 6px 0px;
+    }
+
+     /* Main */
+    main {
+        grid-column: 1 / span 4;
+        height: 380px;
+        padding: 60px 20px 0 20px;
+        margin-bottom: 140px;
+    }
+
+    /* Footer */
+    footer {
+        grid-column: 1 / span 4;
+        padding: 0 20px;
+        font-size: 10px;
+    }
+
+    .fcontainer {
+        display: flex;
+        gap: 20px;
+    }
+
+    .fcontainer > img {
+        width: 40px;
+        height: 90px;
+    }
+
+    .navigation {
+        width: 20%;
+    }
+
+    .contact {
+        width: 30%;
+    }
+
+    .social img {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+/* Media queries for Mobile and Tablet Header */
+@media (max-width: 1023px) {
+    /* Header */
+    header > a {
+        margin-left: 20px;
+    }
+
+    nav {
+        margin-right: 20px;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    .checkbtn img {
+        width: 20px;
+        height: 20px;
+    }
+
+    nav ul {
+        position: fixed;
+        width: 100%;
+        background: white;
+        top: -100%;
+        left: 0;
+        text-align: center;
+        padding: 0;
+    }
+
+    nav li {
+      display: block;
+      padding-bottom: 5px;
+      margin-left: 0;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    #check:checked ~ ul {
+        top: 30px;
+    }
 }

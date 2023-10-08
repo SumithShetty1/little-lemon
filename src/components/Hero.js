@@ -6,7 +6,7 @@ import restaurantfood from '../assets/images/restaurantfood.jpg';
 // Define the Hero component
 export default function Hero() {
   return (
-    <main id='home'>
+    <main className='heromain'>
       <section className='hero'>
         <article>
           {/* Left column with restaurant information */}

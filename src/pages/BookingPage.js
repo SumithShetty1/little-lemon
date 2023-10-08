@@ -31,7 +31,7 @@ export default function BookingPage() {
   };
 
   return (
-    <main>
+    <main className='formpage'>
       <BookingForm availableTimes={availableTimes} dispatch={dispatch} submitForm={submitForm} />
     </main>
   );

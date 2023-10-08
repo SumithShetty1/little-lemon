@@ -1,7 +1,7 @@
 import React from 'react';
 // Import the necessary image assets
 import greeksalad from "../assets/images/greek salad.jpg"
-import bruchetta from "../assets/images/bruchetta.svg"
+import bruchetta from "../assets/images/bruchetta.png"
 import lemondessert from "../assets/images/lemon dessert.jpg"
 import delivery from "../assets/images/Delivery.png"
 
@@ -16,7 +16,7 @@ export default function Highlights(){
       </div>
       <div className="specials">
         <article>
-          <img src={greeksalad} alt="Greek salad" width={289} height={200} />
+          <img src={greeksalad} alt="Greek salad" width={300} height={200} />
           <div className="title">
             <h3>Greek salad</h3>
             <p className="price">$ 12.99</p>
@@ -42,7 +42,7 @@ export default function Highlights(){
           </a>
         </article>
         <article>
-          <img src={lemondessert} alt="Lemon Dessert" width={289} height={200} />
+          <img src={lemondessert} alt="Lemon Dessert" width={300} height={200} />
           <div className="title">
             <h3>Lemon Dessert</h3>
             <p className="price">$ 5.00</p>

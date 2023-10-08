@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import './styles/Layouts.css';
 import Header from './components/Header';
 import HomePage from './pages/HomePage';
 import BookingPage from './pages/BookingPage'

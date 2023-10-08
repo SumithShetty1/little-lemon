@@ -1,0 +1,86 @@
+.confirmpage {
+    height: fit-content;
+    font-family: "Karla";
+    margin: 0;
+    padding: 150px 550px 100px 550px;
+    text-align: center;
+}
+
+.confirmed {
+    height: fit-content;
+    color: white;
+    background-color: #F4CE14;
+    font-size: 1.5em;
+    border-radius: 6px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.backbtn {
+    width: 195px;
+    height: 50px;
+    font-size: 1.4em;
+    font-family: "Karla";
+    font-weight: bold;
+    background-color: #F4CE14;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+/* Media queries for Desktop */
+@media (min-width: 1024px) and (max-width: 1560px) {
+    .confirmpage {
+        padding: 110px 250px 50px 250px;
+    }
+
+    .confirmed {
+        font-size: 1.2em;
+        margin-bottom: 40px;
+        padding: 10px;
+    }
+
+    .backbtn {
+        width: 100px;
+        height: 50px;
+        font-size: 1.2em;
+    }
+}
+
+/* Media queries for Tablet */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .confirmpage {
+        padding: 100px 200px 50px 200px;
+    }
+
+    .confirmed {
+        font-size: 1.2em;
+        margin-bottom: 40px;
+        padding: 10px;
+    }
+
+    .backbtn {
+        width: 100px;
+        height: 50px;
+        font-size: 1.2em;
+    }
+}
+
+/* Media queries for Mobile */
+@media (max-width: 767px) {
+    .confirmpage {
+        padding: 100px 80px 40px 80px;
+    }
+
+    .confirmed {
+        font-size: 1em;
+        margin-bottom: 15px;
+        padding: 10px;
+    }
+
+    .backbtn {
+        width: 100px;
+        height: 40px;
+        font-size: 1em;
+    }
+}

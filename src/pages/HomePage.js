@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/HomePage.css'
 import Hero from "../components/Hero";
 import Highlights from "../components/Highlights"
 import Testimonials from "../components/Testimonials";

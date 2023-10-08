@@ -1,78 +1,192 @@
 /* Reservations */
+.formpage {
+    height: fit-content;
+    font-family: "Karla";
+    margin-bottom: 0;
+}
+
 form {
     display: grid;
     grid-template-columns: repeat(12,1fr);
-    grid-template-rows: auto auto auto auto auto auto;
-    gap: 20px;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    column-gap: 20px;
+    color: white;
+    font-size: 1.3em;
+    font-family: "Markazi Text";
 }
 
 form h1 {
     grid-row: 1;
     grid-column: 1 / span 12;
-    margin: 0;
+    margin: 0 0 20px 0;
     color: #F4CE14;
     font-size: 3.4em;
     font-family: "Markazi Text";
 }
 
+form label {
+    display: inline-block;
+    width: 170px;
+}
+
 form input {
-    width: 50%;
+    width: 250px;
+    height: 40px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding-left: 10px;
+    outline: none;
 }
 
-.first-name {
+form select {
+    width: 263px;
+    height: 40px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding-left: 10px;
+    outline: none;
+}
+
+form textarea {
+    width: 250px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding-left: 10px;
+    outline: none;
+}
+
+.name {
     grid-row: 2;
-    grid-column: 1 / span 6;
+    grid-column: 1 / span 12;
+    display: flex;
+    gap: 100px;
 }
 
-.last-name {
-    grid-row: 2;
-    grid-column: 7 / span 12;
-}
-
-.email {
+.contact-inputs {
     grid-row: 3;
-    grid-column: 1 / span 6;
+    grid-column: 1 / span 12;
+    display: flex;
+    gap: 100px;
 }
 
-.phone {
-    grid-row: 3;
-    grid-column: 7 / span 12;
-}
-
-.phone input {
-    padding-left: 40px;
-    background: url(../assets/images/us.png) no-repeat;
-    background-color: white;
-    background-size: 16%;
-    background-position: left;
-}
-
-.date {
+.date-time {
     grid-row: 4;
-    grid-column: 1 / span 6;
+    grid-column: 1 / span 12;
+    display: flex;
+    gap: 100px;
 }
 
-.time {
-    grid-row: 4;
-    grid-column: 7 / span 12;
+.date-time label {
+    margin-right: 1px;
 }
 
-.diners {
+.dine-details {
     grid-row: 5;
-    grid-column: 1 / span 6;
-}
-
-.occasion {
-    grid-row: 5;
-    grid-column: 7 / span 12;
+    grid-column: 1 / span 12;
+    display: flex;
+    gap: 100px;
 }
 
 .special {
     grid-row: 6;
-    grid-column: 1 / span 6;
+    grid-column: 1 / span 12;
+    display: flex;
+}
+
+.special label {
+    margin-top: 6px;
 }
 
 .submitbtn {
     grid-row: 7;
-    grid-column: 1 / span 12;
+    grid-column: 5 / span 7;
+    width: 275px;
+    height: 50px;
+    color: black;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: "Karla";
+    background-color: #F4CE14;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    margin: 50px 0;
+}
+
+.submitbtn:disabled {
+    background-color: rgba(246, 213, 24,0.7);
+}
+
+/* Media queries for Mobile */
+@media (max-width: 767px) {
+    .formpage {
+        padding: 50px 20px 30px 20px;
+    }
+
+    form {
+        display: block;
+        font-size: 1em;
+    }
+
+    form h1 {
+        font-size: 2em;
+    }
+
+    form input {
+        width: 96%;
+        font-size: 16px;
+    }
+
+    form select {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    form textarea {
+        width: 96%;
+        height: 100px;
+        font-size: 16px;
+    }
+
+    .name {
+        display: block;
+    }
+
+    .contact-inputs {
+        display: block;
+    }
+
+    .date-time {
+        display: block;
+    }
+
+    .date-time label {
+        margin-right: 0;
+    }
+
+    .dine-details {
+        display: block;
+    }
+
+    .special {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .special label {
+        margin-top: 0;
+    }
+
+    .submitbtn {
+        width: 200px;
+        height: 50px;
+        font-size: 1em;
+        margin: 0 50px;
+    }
 }

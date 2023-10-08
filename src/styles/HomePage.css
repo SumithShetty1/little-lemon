@@ -1,0 +1,473 @@
+/* Hero */
+.hero > article {
+    display: flex;
+    gap: 200px;
+}
+
+.hero article > div {
+    flex: 1;
+    padding: 1% 0 1% 0;
+}
+
+.hero h1 {
+    margin: 0;
+    color: #F4CE14;
+    font-size: 3.4em;
+    font-family: "Markazi Text";
+}
+
+.hero h2 {
+    margin-top: 0;
+    color: #EDEFEE;
+    font-size: 2.1em;
+    font-family: "Markazi Text";
+}
+
+.hero p {
+    width: 272px;
+    margin-bottom: 8px;
+    color: #EDEFEE;
+    font-size: 1.45em;
+    font-family: "Karla";
+}
+
+.hero button {
+    width: 195px;
+    height: 50px;
+    font-size: 1.4em;
+    font-family: "Karla";
+    font-weight: bold;
+    background-color: #F4CE14;
+    border: none;
+    border-radius: 18px;
+    cursor: pointer;
+}
+
+.hero img {
+    flex: 1;
+    margin-top: 24px;
+    border-radius: 16px;
+}
+
+/* Highlights */
+.highlights {
+    grid-column: 1 / span 12;
+    grid-row: 3;
+    padding: 0 247px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.highlights h3 {
+    font-family: "Markazi Text";
+}
+
+.specialsheader {
+    grid-column: 1;
+    grid-row: 1;
+    margin-bottom: 30px;
+}
+
+.specialsheader h1 {
+    font-size: 2.55em;
+    font-family: "Markazi Text";
+    display: inline-block;
+}
+
+.specialsheader button {
+    float: right;
+    margin-top: 30px;
+    width: 216px;
+    height: 53px;
+    font-size: 1.4em;
+    font-weight: bold;
+    font-family: "Karla";
+    background-color: #F4CE14;
+    border: none;
+    border-radius: 18px;
+    cursor: pointer;
+}
+
+.specials {
+    grid-row: 2;
+    display: flex;
+    gap: 45px;
+}
+
+.specials article {
+    flex: 1;
+    padding-bottom: 38px;
+    font-family: "Karla";
+    border-radius: 16px 16px 0 0;
+    background-color: #EDEFEE;
+}
+
+.specials article > img {
+    width: 100%;
+    border-radius: 16px 16px 0 0;
+}
+
+.title, .description, .order {
+    margin: 0 18px;
+    font-size: 1.27em;
+}
+
+.title {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    column-gap: 20px;
+    margin-bottom: 10px;
+}
+
+.title h3 {
+    grid-column: 1 / span 2;
+}
+
+.price {
+    grid-column: 3;
+    padding: 5px;
+    color: orange;
+    font-size: 1em;
+}
+
+.description, .order {
+    margin-right: 36px;
+    margin-bottom: 60px;
+}
+
+.description {
+    color: #333333;
+}
+
+.order {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Testimonials */
+.testimonials {
+    grid-row: 4;
+    grid-column: 1 / span 12;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 0 226px;
+    background-color: #495E57;
+}
+
+.tcontainer {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: auto auto; /* Define row heights */
+    column-gap: 20px;
+}
+
+.tcontainer h1 {
+    grid-column: 1 / span 8;
+    text-align: center;
+    color: #F4CE14;
+    font-size: 2.84em;
+    font-family: "Markazi Text";
+}
+
+.tcontainer article {
+    flex: 1;
+    text-align: center;
+    margin-bottom: 50px;
+    background-color: #EDEFEE;
+}
+
+.tcontainer > div {
+    grid-column: 1 / span 8;
+    display: flex;
+    gap: 20px;
+}
+
+.tcontainer div > article > img, .review {
+    margin-top: 20px;
+}
+
+.tcontainer img:nth-of-type(2) {
+    border-radius: 50%;
+}
+
+.tcontainer article > h3, .review {
+    font-size: 1.2em;
+    font-family: "Karla";
+}
+
+.review {
+    color: #333333;
+}
+
+/* About */
+.about {
+    grid-column: 1 / span 12;
+    grid-row: 5;
+    padding: 0 247px;
+}
+
+.about article {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: auto;
+    column-gap: 20px;
+    margin-top: 80px;
+    margin-bottom: 140px;
+}
+
+.about-details {
+    grid-column: 1 / span 4;
+    grid-row: 1;
+}
+
+.about h1 {
+    margin: 0;
+    color: #F4CE14;
+    font-size: 3.4em;
+    font-family: "Markazi Text";
+}
+
+.about h2 {
+    margin-top: 0;
+    color: #495E57;
+    font-size: 2.1em;
+    font-family: "Markazi Text";
+}
+
+.about p {
+    margin-bottom: 7px;
+    color: #333333;
+    font-size: 1.45em;
+    font-family: "Karla";
+}
+
+.images {
+    grid-column: 8;
+    grid-row: 1;
+}
+
+.owners1 {
+    position: absolute;
+}
+
+.owners2 {
+    position: relative;
+    top: 110px;
+    right: 198px;
+}
+
+@media (min-width: 1024px) and (max-width: 1560px) {
+    /* Highlights */
+    .highlights {
+        padding: 0 100px;
+    }
+
+    .testimonials {
+        padding: 0 100px;
+    }
+
+    .about {
+        padding: 0 100px;
+    }
+
+    .about h1 {
+        font-size: 3em;
+    }
+
+    .about h2 {
+        font-size: 2em;
+    }
+
+    .about p {
+        font-size: 1.2em;
+    }
+}
+
+/* Media queries for Mobile */
+@media (max-width: 767px) {
+    /* Hero */
+    .heromain {
+        max-width: 100%;
+        height: 300px;
+        margin-bottom: 10px;
+    }
+
+    .hero > article {
+        gap: 10px;
+    }
+
+    .hero article > div {
+        padding: 0;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero h2 {
+        font-size: 1.5em;
+    }
+
+    .hero p {
+        width: 180px;
+        margin-bottom: 50px;
+        font-size: 1em;
+    }
+
+    .hero button {
+        width: 140px;
+        height: 40px;
+        font-size: 1em;
+    }
+
+    .hero img {
+        height: 150px;
+        margin-top: 60px;
+    }
+
+    /* Highlights */
+    .highlights {
+        grid-column: 1 / span 4;
+        padding: 0 20px;
+        column-gap: 10px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+
+    .specialsheader {
+        margin-bottom: 15px;
+        gap: 30px;
+    }
+
+    .specialsheader h1 {
+        font-size: 1.2em;
+    }
+
+    .specialsheader button {
+        flex: none;
+        margin-top: 15px;
+        width: 80px;
+        height: 25px;
+        font-size: 0.7em;
+    }
+
+    .specials {
+        display: block;
+    }
+
+    .specials article {
+        padding-bottom: 20px;
+        border-radius: 16px;
+        margin-bottom: 20px;
+    }
+
+    .specials article > img {
+        display: inline-block;
+        width: 40%;
+        height: 50%;
+        border-radius: 16px 0 0 0;
+    }
+
+    .title, .description, .order {
+        margin: 0 9px;
+        font-size: 0.8em;
+    }
+
+    .specials br {
+        display: none;
+    }
+
+    .title {
+        display: inline-block;
+        margin-left: 60px;
+        margin-bottom: 20px;
+        vertical-align: top;
+    }
+
+    .price {
+        padding: 0;
+    }
+
+    .description, .order {
+        margin-right: 18px;
+        margin-bottom: 15px;
+    }
+
+    /* Testimonials */
+    .testimonials {
+        grid-column: 1 / span 4;
+        padding: 0 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .tcontainer {
+        display: block;
+    }
+
+    .tcontainer h1 {
+        font-size: 2em;
+    }
+
+    .tcontainer article {
+        margin-bottom: 30px;
+        border-radius: 16px;
+    }
+
+    .tcontainer > div {
+        display: block;
+    }
+
+    .tcontainer div > article > img, .review {
+        margin-top: 20px;
+    }
+
+    .tcontainer article > h3, .review {
+        font-size: 1.2em;
+    }
+
+    .review {
+        padding-bottom: 20px;
+    }
+
+    /* About */
+    .about {
+        grid-column: 1 / span 4;
+        padding: 0 20px;
+    }
+
+    .about article {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .about h1 {
+        font-size: 2.5em;
+    }
+
+    .about h2 {
+        font-size: 1.5em;
+    }
+
+    .about p {
+        margin-bottom: 7px;
+        font-size: 1.2em;
+    }
+
+    .owners1 {
+        position: relative;
+        width: 100%;
+        height: 50%;
+    }
+
+    .owners2 {
+        display: none;
+    }
+}
