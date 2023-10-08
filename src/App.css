@@ -3,6 +3,10 @@
     font-family: "Markazi Text", "Karla";
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Common Grid Styles */
 .container {
     display: grid;
@@ -182,7 +186,7 @@ footer {
     }
 
     nav a {
-        font-size: 1.2em;
+        font-size: 1em;
     }
 
     /* Main */

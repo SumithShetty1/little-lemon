@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import Header from './components/Header';
-import HomePage from './pages/HomePage';
-import BookingPage from './pages/BookingPage'
-import Footer from "./components/Footer";
+import Header from './assets/components/Header';
+import HomePage from './assets/pages/HomePage';
+import BookingPage from './assets/pages/BookingPage'
+import Footer from "./assets/components/Footer";
 import { Routes, Route } from 'react-router-dom';
-import ConfirmedBooking from './pages/ConfirmedBooking';
+import ConfirmedBooking from './assets/pages/ConfirmedBooking';
 
 function App() {
 

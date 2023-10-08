@@ -26,33 +26,32 @@ export default function BookingForm(props) {
   // Add a state variable to track form validity
   const [isFormValid, setIsFormValid] = useState(false);
 
-  // Function to update form validity
-  const updateFormValidity = () => {
-  const isFirstNameValid = firstname.trim() !== '';
-  const isLastNameValid = lastname.trim() !== '';
-  const isEmailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email); // Email format validation
-  const isPhoneValid = /^[0-9]{10}$/.test(phone); // Custom phone validation (10 digits)
-  const isDateValid = date !== '';
-  const isTimeValid = time !== '';
-  const isDinersValid = diners >= 1 && diners <= 10;
-  const isOccasionValid = occasion !== '';
-
-  // Calculate overall form validity
-  const isValid = isFirstNameValid &&
-    isLastNameValid &&
-    isEmailValid &&
-    isPhoneValid &&
-    isDateValid &&
-    isTimeValid &&
-    isDinersValid &&
-    isOccasionValid;
-
-    setIsFormValid(isValid);
-  };
-
   // Update form validity whenever a field changes
   useEffect(() => {
-    updateFormValidity();
+    const updateFormValidity = () => {
+      const isFirstNameValid = firstname.trim() !== '';
+      const isLastNameValid = lastname.trim() !== '';
+      const isEmailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+      const isPhoneValid = /^[0-9]{10}$/.test(phone);
+      const isDateValid = date !== '';
+      const isTimeValid = time !== '';
+      const isDinersValid = diners >= 1 && diners <= 10;
+      const isOccasionValid = occasion !== '';
+
+      const isValid =
+        isFirstNameValid &&
+        isLastNameValid &&
+        isEmailValid &&
+        isPhoneValid &&
+        isDateValid &&
+        isTimeValid &&
+        isDinersValid &&
+        isOccasionValid;
+
+      setIsFormValid(isValid);
+    };
+
+    updateFormValidity(); // Call the function immediately
   }, [firstname, lastname, email, phone, date, time, diners, occasion]);
 
   const handleSubmit = (e) => {
