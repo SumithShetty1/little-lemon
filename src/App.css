@@ -163,14 +163,7 @@ footer {
 }
 
 /* Media queries for Desktop */
-@media (min-width: 1024px) {
-    .container {
-        grid-template-columns: repeat(12, 1fr);
-        column-gap: 20px;
-    }
-}
-
-@media (min-width: 1024px) and (max-width: 1560px) {
+@media (min-width: 1024px) and (max-width: 1535px) {
     /* Header */
     .logo {
         margin: 10px 0px 0px 100px;
@@ -198,6 +191,12 @@ footer {
     footer {
         padding-left: 100px;
         padding-right: 100px;
+    }
+}
+
+@media (min-width: 1535px) {
+    nav a {
+        font-size: 1.2em;
     }
 }
 

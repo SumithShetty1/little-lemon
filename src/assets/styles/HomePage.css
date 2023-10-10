@@ -44,7 +44,6 @@
 }
 
 .hero img {
-    flex: 1;
     margin-top: 24px;
     border-radius: 16px;
 }
@@ -263,7 +262,24 @@
 }
 
 /* Media queries for Desktop */
-@media (min-width: 1024px) and (max-width: 1560px) {
+@media (min-width: 1024px) and (max-width: 1535px) {
+    /* Hero */
+    .hero h1 {
+        font-size: 2.8em;
+    }
+
+    .hero h2 {
+        font-size: 2.4em;
+    }
+
+    .hero p {
+        font-size: 1.2em;
+    }
+
+    .hero button {
+        font-size: 1.2em;
+    }
+
     /* Highlights */
     .highlights {
         padding: 0 100px;
@@ -296,7 +312,6 @@
     .hero > article {
         gap: 10px;
     }
-
 
     .hero img {
         height: 380px;
@@ -453,6 +468,7 @@
     }
 
     .hero img {
+        width: 200px;
         height: 150px;
         margin-top: 60px;
     }

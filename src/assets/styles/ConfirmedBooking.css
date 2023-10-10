@@ -1,3 +1,4 @@
+/* ConfirmedBooking */
 .confirmpage {
     height: fit-content;
     font-family: "Karla";
@@ -29,7 +30,7 @@
 }
 
 /* Media queries for Desktop */
-@media (min-width: 1024px) and (max-width: 1560px) {
+@media (min-width: 1024px) and (max-width: 1535px) {
     .confirmpage {
         padding: 110px 250px 50px 250px;
     }

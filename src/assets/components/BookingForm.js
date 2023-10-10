@@ -212,12 +212,14 @@ export default function BookingForm(props) {
           aria-label="Enter your special request"
         />
       </span>
-      <input
-        type="submit"
-        value="Make your Reservation"
-        className='submitbtn'
-        disabled={!isFormValid} // Disable the button if the form is invalid
-      />
+      <div className='submitbtncontainer'>
+        <input
+          type="submit"
+          value="Make your Reservation"
+          className='submitbtn'
+          disabled={!isFormValid} // Disable the button if the form is invalid
+        />
+      </div>
     </form>
   );
 }
