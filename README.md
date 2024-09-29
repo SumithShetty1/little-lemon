@@ -1,4 +1,5 @@
-# Getting Started with Create React App
+# Little Lemon: A React-Based Web Application for Table Reservations (Peer-Graded Assignment for Front-End Developer Capstone)
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
